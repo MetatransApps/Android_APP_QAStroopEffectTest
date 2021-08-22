@@ -1,0 +1,16 @@
+<resources>
+    
+    <string name="mode_colours_name">Get Meaning, Put Color</string>
+    <string name="mode_colours_desc">Understand the meaning and click the button with the correct color</string>
+    <string name="mode_words_name">Get Color, Put Meaning</string>
+    <string name="mode_words_desc">Recognize the colour and click the button with the correct meaning</string>
+    
+    <string name="ec_colour_red">Red</string>
+    <string name="ec_colour_orange">Orange</string>
+    <string name="ec_colour_yellow">Yellow</string>
+    <string name="ec_colour_green">Green</string>
+    <string name="ec_colour_blue">Blue</string>
+    <string name="ec_colour_indigo">Purple</string>
+    <string name="ec_colour_violet">Pink</string>
+    
+</resources>

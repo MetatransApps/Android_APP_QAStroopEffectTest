@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <string name="achievement_title_correct_getcolor">همه درست در دریافت رنگ، به معنای</string>
+    <string name="achievement_title_correct_getmeaning">همه صحیح در بدان معناست، رنگ را بگذار</string>
+    
+    <string name="achievement_desc_correct_getcolor">شما به درستی در تمام سوالات در دریافت رنگ، حالت معنی اشاره </string>
+    <string name="achievement_desc_correct_getmeaning">شما به طور صحیح در تمام سوالات در دریافت معنی، حالت رنگ قرار داده اید</string>
+    
+    
+</resources>

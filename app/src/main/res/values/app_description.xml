@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+        <string name="app_name">Easy Colors - Stroop Effect Test and more</string>
+        
+        <string name="app_html_desc_short">
+        <![CDATA[
+        
+Play Colors Game.
+Be Focused, Be Fast, Be Resistant. Stroop Effect.
+        
+        		]]>
+    </string>
+    
+    
+    <string name="app_html_desc">
+        <![CDATA[
+
+The game illustrates interesting phenomenons by challenges the link between the visual color and the word of the color. There are 2 different playing modes:
+* Get Meaning, Put Color - Understand the meaning and click the button with the correct color
+* Get Color, Put Meaning - Recognize the colour and click the button with the correct meaning. Actually, this one is known in science and medicine as "Stroop Effect".
+
+<b>Features</b>
+1. Questions organized as a test sequence (30 questions).
+2. Shows the result after the test.
+3. High scores - keeps track of your best result for each level.
+4. Supports different color palettes for different tastes.
+
+Your feedback and/or review is more than welcome.
+
+        ]]>
+    </string>
+    
+    <string name="app_html_keywords">
+        <![CDATA[
+         	Effect, Stroop, colors, easy, exam, game, play
+                ]]>
+    </string>
+    
+</resources>

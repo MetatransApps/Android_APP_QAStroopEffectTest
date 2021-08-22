@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <string name="achievement_title_correct_getcolor">Все правильно в Получить Цвета, Поставьте Значение</string>
+    <string name="achievement_title_correct_getmeaning">Все правильно в Получить Значение, Поставьте Цвет</string>
+    
+    
+    <string name="achievement_desc_correct_getcolor">Вы ответили правильно на все вопросы в режим Получить Цвета, Поставьте Значение</string>
+    <string name="achievement_desc_correct_getmeaning">Вы ответили правильно на все вопросы в режим Получить Значение, Поставьте Цвет</string>
+    
+    
+</resources>

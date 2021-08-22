@@ -1,0 +1,16 @@
+<resources>
+	
+    <string name="mode_colours_name">بدانید، قرار دهید رنگ</string>
+    <string name="mode_colours_desc">درک معنا و کلیک بر روی دکمه با رنگ صحیح</string>
+    <string name="mode_words_name">دریافت رنگ، به معنی</string>
+    <string name="mode_words_desc">رنگ را شناسایی کرده و روی دکمه با معنای صحیح کلیک کنید</string>
+    
+    <string name="ec_colour_red">سرخ</string>
+    <string name="ec_colour_orange">نارنجی</string>
+    <string name="ec_colour_yellow">رنگ زرد</string>
+    <string name="ec_colour_green">سبز</string>
+    <string name="ec_colour_blue">آبی</string>
+    <string name="ec_colour_indigo">رنگ بنفش</string>
+    <string name="ec_colour_violet">رنگ صورتی</string>
+    
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     
+    <string name="mode_colours_name">Получить Значение, Поставьте Цвет</string>
+    <string name="mode_colours_desc">Понять смыслом и нажмите кнопку с правой цвета</string>
+    <string name="mode_words_name">Получить Цвета, Поставьте Значение</string>
+    <string name="mode_words_desc">Признать цвет и нажмите на кнопку с правильным смыслом</string>
+    
+    <string name="ec_colour_red">Красный</string>
+    <string name="ec_colour_orange">Оранжевый</string>
+    <string name="ec_colour_yellow">Желтый</string>
+    <string name="ec_colour_green">Зеленый</string>
+    <string name="ec_colour_blue">Синий</string>
+    <string name="ec_colour_indigo">Фиолетовый</string>
+    <string name="ec_colour_violet">Розовый</string>
+    
+</resources>

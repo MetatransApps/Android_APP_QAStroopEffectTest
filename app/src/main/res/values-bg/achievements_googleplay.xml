@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <string name="achievement_title_correct_getcolor">Всичко вярно в Вземи Цвят, Сложи Значение</string>
+    <string name="achievement_title_correct_getmeaning">Всичко вярно в Вземи Значение, Сложи Цвят</string>
+    
+    
+    <string name="achievement_desc_correct_getcolor">Вие отговорихте правилно на всички въпроси в Вземи Цвят, Сложи Значение</string>
+    <string name="achievement_desc_correct_getmeaning">Вие отговорихте правилно на всички въпроси в Вземи Значение, Сложи Цвят</string>
+ 
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+        <string name="app_name">Easy Colours - Prueba de efecto Stroop y más</string>
+    
+        <string name="app_html_desc_short">
+        <![CDATA[
+        
+Juega Juego de colores.
+Enfócate, sé rápido, sé resistente. Efecto Stroop.
+        
+        		]]>
+    </string>
+    
+    
+    <string name="app_html_desc">
+        <![CDATA[
+
+El juego ilustra un fenómeno interesante al desafiar el vínculo entre el color visual y la palabra del color. Hay 2 modos de juego diferentes:
+* Obtener significado, poner color - Comprender el significado y hacer clic en el botón con el color correcto
+* Obtener color, poner significado - Reconocer el color y hacer clic en el botón con el significado correcto. En realidad, este es conocido en la ciencia y la medicina como "Efecto Stroop".
+
+<b> Funciones </ b>
+1. Preguntas organizadas como una secuencia de prueba (30 preguntas).
+2. Muestra el resultado después de la prueba.
+3. Puntuaciones altas: realiza un seguimiento de tus mejores resultados para cada nivel.
+4. Admite diferentes paletas de colores para diferentes gustos.
+
+Sus comentarios son más que bienvenidos.
+
+        ]]>
+    </string>
+    
+     <string name="app_html_keywords">
+        <![CDATA[
+         	Efecto Stroop, colores, fácil, examen, juego
+                ]]>
+    </string>
+    
+</resources>
