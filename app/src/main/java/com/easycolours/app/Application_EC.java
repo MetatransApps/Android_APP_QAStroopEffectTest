@@ -2,7 +2,6 @@ package com.easycolours.app;
 
 
 import com.apps.mobile.android.commons.achievements.IAchievementsManager;
-import com.apps.mobile.android.commons.ads.api.IAdsConfigurations;
 import com.apps.mobile.android.commons.app.Application_Base_Ads;
 import com.apps.mobile.android.commons.cfg.app.IAppConfig;
 import com.apps.mobile.android.commons.cfg.appstore.IAppStore;
@@ -16,7 +15,6 @@ import com.apps.mobile.android.commons.model.UserSettings_Base;
 import com.apps.mobile.android.commons.questionnaire.model.GameData;
 import com.apps.mobile.android.commons.ui.utils.DebugUtils;
 import com.easycolours.lib.BuildConfig;
-import com.easycolours.lib.R;
 import com.easycolours.achievements.AchievementsManager;
 import com.easycolours.cfg.app.AppConfig_EC;
 import com.easycolours.cfg.mode.ConfigurationUtils_Mode;
