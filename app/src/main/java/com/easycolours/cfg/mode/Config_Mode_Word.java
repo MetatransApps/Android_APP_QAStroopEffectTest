@@ -1,7 +1,8 @@
 package com.easycolours.cfg.mode;
 
 
-import com.apps.mobile.android.commons.cfg.ConfigurationEntry_Base;
+import org.metatransapps.commons.cfg.ConfigurationEntry_Base;
+
 import com.easycolours.lib.R;
 
 

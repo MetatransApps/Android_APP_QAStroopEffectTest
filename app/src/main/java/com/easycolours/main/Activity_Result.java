@@ -3,14 +3,15 @@ package com.easycolours.main;
 
 import android.content.res.Configuration;
 
-import com.apps.mobile.android.commons.ads.api.IAdsConfiguration;
-import com.apps.mobile.android.commons.storage.StorageUtils;
+import org.metatransapps.commons.ads.api.IAdsConfiguration;
+import org.metatransapps.commons.storage.StorageUtils;
+
 import com.easycolours.lib.R;
 import com.easycolours.cfg.mode.ConfigurationUtils_Mode;
 import com.easycolours.model.UserSettings;
 
 
-public class Activity_Result extends com.apps.mobile.android.commons.questionnaire.main.Activity_Result {
+public class Activity_Result extends org.metatransapps.commons.questionnaire.main.Activity_Result {
 	
 	
 	@Override

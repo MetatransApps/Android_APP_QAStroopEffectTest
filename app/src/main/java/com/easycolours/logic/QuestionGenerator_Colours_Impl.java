@@ -4,10 +4,11 @@ package com.easycolours.logic;
 import android.content.Context;
 import android.graphics.Color;
 
-import com.apps.mobile.android.commons.questionnaire.api.IConfigurationQuestion;
-import com.apps.mobile.android.commons.questionnaire.api.IQuestionGenerator;
-import com.apps.mobile.android.commons.questionnaire.model.GameData;
-import com.apps.mobile.android.commons.questionnaire.utils.NumbersUtils;
+import org.metatransapps.commons.questionnaire.api.IConfigurationQuestion;
+import org.metatransapps.commons.questionnaire.api.IQuestionGenerator;
+import org.metatransapps.commons.questionnaire.model.GameData;
+import org.metatransapps.commons.questionnaire.utils.NumbersUtils;
+
 import com.easycolours.lib.R;
 
 

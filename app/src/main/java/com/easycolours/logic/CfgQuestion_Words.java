@@ -1,9 +1,9 @@
 package com.easycolours.logic;
 
 
-import com.apps.mobile.android.commons.questionnaire.api.IConfigurationQuestion_TextButtons;
-import com.apps.mobile.android.commons.questionnaire.api.IConfigurationQuestion_TextQuestion;
-import com.apps.mobile.android.commons.questionnaire.logic.questions.CfgQuestion_Base_TextButtons;
+import org.metatransapps.commons.questionnaire.api.IConfigurationQuestion_TextButtons;
+import org.metatransapps.commons.questionnaire.api.IConfigurationQuestion_TextQuestion;
+import org.metatransapps.commons.questionnaire.logic.questions.CfgQuestion_Base_TextButtons;
 
 
 public class CfgQuestion_Words extends CfgQuestion_Base_TextButtons implements IConfigurationQuestion_TextButtons, IConfigurationQuestion_TextQuestion  {

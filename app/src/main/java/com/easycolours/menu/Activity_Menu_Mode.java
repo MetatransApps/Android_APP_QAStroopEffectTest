@@ -4,15 +4,16 @@ package com.easycolours.menu;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.apps.mobile.android.commons.Alerts_Base;
-import com.apps.mobile.android.commons.R;
-import com.apps.mobile.android.commons.app.Application_Base;
-import com.apps.mobile.android.commons.cfg.IConfigurationEntry;
-import com.apps.mobile.android.commons.events.api.IEvent_Base;
-import com.apps.mobile.android.commons.events.api.IEventsManager;
-import com.apps.mobile.android.commons.ui.list.ListViewFactory;
-import com.apps.mobile.android.commons.ui.list.RowItem_CIdTD;
-import com.apps.mobile.android.commons.ui.utils.BitmapUtils;
+import org.metatransapps.commons.Alerts_Base;
+import org.metatransapps.commons.R;
+import org.metatransapps.commons.app.Application_Base;
+import org.metatransapps.commons.cfg.IConfigurationEntry;
+import org.metatransapps.commons.events.api.IEvent_Base;
+import org.metatransapps.commons.events.api.IEventsManager;
+import org.metatransapps.commons.ui.list.ListViewFactory;
+import org.metatransapps.commons.ui.list.RowItem_CIdTD;
+import org.metatransapps.commons.ui.utils.BitmapUtils;
+
 import com.easycolours.Activity_Base_EasyColours;
 import com.easycolours.cfg.mode.ConfigurationUtils_Mode;
 

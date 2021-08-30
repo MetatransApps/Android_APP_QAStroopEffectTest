@@ -3,7 +3,8 @@ package com.easycolours.logic;
 
 import android.app.Application;
 
-import com.apps.mobile.android.commons.questionnaire.api.IQuestionGenerator;
+import org.metatransapps.commons.questionnaire.api.IQuestionGenerator;
+
 import com.easycolours.cfg.mode.ConfigurationUtils_Mode;
 
 

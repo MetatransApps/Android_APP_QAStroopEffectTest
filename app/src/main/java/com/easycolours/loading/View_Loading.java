@@ -6,12 +6,12 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 
+import org.metatransapps.commons.loading.View_Loading_Base;
+import org.metatransapps.commons.model.UserSettings_Base;
+import org.metatransapps.commons.questionnaire.api.IConfigurationQuestion;
+import org.metatransapps.commons.questionnaire.api.IQuestionGenerator;
+import org.metatransapps.commons.ui.utils.BitmapUtils;
 
-import com.apps.mobile.android.commons.loading.View_Loading_Base;
-import com.apps.mobile.android.commons.model.UserSettings_Base;
-import com.apps.mobile.android.commons.questionnaire.api.IConfigurationQuestion;
-import com.apps.mobile.android.commons.questionnaire.api.IQuestionGenerator;
-import com.apps.mobile.android.commons.ui.utils.BitmapUtils;
 import com.easycolours.lib.R;
 import com.easycolours.logic.CfgQuestion_Colours;
 import com.easycolours.logic.CfgQuestion_Words;

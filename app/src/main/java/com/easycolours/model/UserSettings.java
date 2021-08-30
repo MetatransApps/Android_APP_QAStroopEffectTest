@@ -5,11 +5,12 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
-import com.apps.mobile.android.commons.cfg.colours.IConfigurationColours;
+import org.metatransapps.commons.cfg.colours.IConfigurationColours;
+
 import com.easycolours.cfg.mode.ConfigurationUtils_Mode;
 
 
-public class UserSettings extends com.apps.mobile.android.commons.questionnaire.model.UserSettings {
+public class UserSettings extends org.metatransapps.commons.questionnaire.model.UserSettings {
 	
 	
 	private static final long serialVersionUID = 7288403882626554342L;

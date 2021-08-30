@@ -1,14 +1,15 @@
 package com.easycolours.main;
 
 
-import com.apps.mobile.android.commons.Activity_Base;
-import com.apps.mobile.android.commons.ads.api.IAdsConfiguration;
-import com.apps.mobile.android.commons.cfg.colours.ConfigurationUtils_Colours;
-import com.apps.mobile.android.commons.cfg.colours.IConfigurationColours;
-import com.apps.mobile.android.commons.questionnaire.api.IConfigurationQuestion;
-import com.apps.mobile.android.commons.questionnaire.main.OnTouchListener_Question;
-import com.apps.mobile.android.commons.questionnaire.main.View_Question;
-import com.apps.mobile.android.commons.storage.StorageUtils;
+import org.metatransapps.commons.Activity_Base;
+import org.metatransapps.commons.ads.api.IAdsConfiguration;
+import org.metatransapps.commons.cfg.colours.ConfigurationUtils_Colours;
+import org.metatransapps.commons.cfg.colours.IConfigurationColours;
+import org.metatransapps.commons.questionnaire.api.IConfigurationQuestion;
+import org.metatransapps.commons.questionnaire.main.OnTouchListener_Question;
+import org.metatransapps.commons.questionnaire.main.View_Question;
+import org.metatransapps.commons.storage.StorageUtils;
+
 import com.easycolours.lib.R;
 import com.easycolours.logic.GeneratorsFactory;
 import com.easycolours.menu.Activity_Menu_Main;
@@ -19,7 +20,7 @@ import android.view.Gravity;
 import android.view.View;
 
 
-public class Activity_Question extends com.apps.mobile.android.commons.questionnaire.main.Activity_Question {
+public class Activity_Question extends org.metatransapps.commons.questionnaire.main.Activity_Question {
 	
 	
 	/*@Override

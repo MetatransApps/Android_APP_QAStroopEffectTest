@@ -1,7 +1,7 @@
 package com.easycolours.cfg.app;
 
 
-import com.apps.mobile.android.commons.cfg.app.AppConfig_Base;
+import org.metatransapps.commons.cfg.app.AppConfig_Base;
 
 
 public class AppConfig_EC extends AppConfig_Base {

@@ -1,8 +1,8 @@
 package com.easycolours.cfg.mode;
 
 
-import com.apps.mobile.android.commons.cfg.ConfigurationUtils_Base;
-import com.apps.mobile.android.commons.cfg.IConfigurationEntry;
+import org.metatransapps.commons.cfg.ConfigurationUtils_Base;
+import org.metatransapps.commons.cfg.IConfigurationEntry;
 
 
 public class ConfigurationUtils_Mode extends ConfigurationUtils_Base {

@@ -1,19 +1,20 @@
 package com.easycolours.app;
 
 
-import com.apps.mobile.android.commons.achievements.IAchievementsManager;
-import com.apps.mobile.android.commons.app.Application_Base_Ads;
-import com.apps.mobile.android.commons.cfg.app.IAppConfig;
-import com.apps.mobile.android.commons.cfg.appstore.IAppStore;
-import com.apps.mobile.android.commons.cfg.colours.ConfigurationUtils_Colours;
-import com.apps.mobile.android.commons.cfg.menu.ConfigurationUtils_Base_MenuMain;
-import com.apps.mobile.android.commons.engagement.ILeaderboardsProvider;
-import com.apps.mobile.android.commons.engagement.leaderboards.LeaderboardsProvider_Base;
-import com.apps.mobile.android.commons.events.api.IEventsManager;
-import com.apps.mobile.android.commons.model.GameData_Base;
-import com.apps.mobile.android.commons.model.UserSettings_Base;
-import com.apps.mobile.android.commons.questionnaire.model.GameData;
-import com.apps.mobile.android.commons.ui.utils.DebugUtils;
+import org.metatransapps.commons.achievements.IAchievementsManager;
+import org.metatransapps.commons.app.Application_Base_Ads;
+import org.metatransapps.commons.cfg.app.IAppConfig;
+import org.metatransapps.commons.cfg.appstore.IAppStore;
+import org.metatransapps.commons.cfg.colours.ConfigurationUtils_Colours;
+import org.metatransapps.commons.cfg.menu.ConfigurationUtils_Base_MenuMain;
+import org.metatransapps.commons.engagement.ILeaderboardsProvider;
+import org.metatransapps.commons.engagement.leaderboards.LeaderboardsProvider_Base;
+import org.metatransapps.commons.events.api.IEventsManager;
+import org.metatransapps.commons.model.GameData_Base;
+import org.metatransapps.commons.model.UserSettings_Base;
+import org.metatransapps.commons.questionnaire.model.GameData;
+import org.metatransapps.commons.ui.utils.DebugUtils;
+
 import com.easycolours.lib.BuildConfig;
 import com.easycolours.achievements.AchievementsManager;
 import com.easycolours.cfg.app.AppConfig_EC;

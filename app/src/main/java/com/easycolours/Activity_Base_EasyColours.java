@@ -1,7 +1,8 @@
 package com.easycolours;
 
 
-import com.apps.mobile.android.commons.questionnaire.Activity_Base_Questionnaire;
+import org.metatransapps.commons.questionnaire.Activity_Base_Questionnaire;
+
 import com.easycolours.lib.R;
 
 import android.content.res.Configuration;

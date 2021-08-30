@@ -1,7 +1,8 @@
 package com.easycolours.menu;
 
 
-import com.apps.mobile.android.commons.storage.StorageUtils;
+import org.metatransapps.commons.storage.StorageUtils;
+
 import com.easycolours.lib.R;
 import com.easycolours.model.UserSettings;
 
@@ -9,7 +10,7 @@ import android.content.res.Configuration;
 import android.widget.FrameLayout;
 
 
-public class Activity_Menu_Colours extends com.apps.mobile.android.commons.questionnaire.menu.Activity_Menu_Colours {
+public class Activity_Menu_Colours extends org.metatransapps.commons.questionnaire.menu.Activity_Menu_Colours {
 	
 	
 	@Override

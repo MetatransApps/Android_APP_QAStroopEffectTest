@@ -3,14 +3,15 @@ package com.easycolours.menu;
 
 import java.util.List;
 
-import com.apps.mobile.android.commons.achievements.IAchievementsManager;
-import com.apps.mobile.android.commons.app.Application_Base;
-import com.apps.mobile.android.commons.cfg.menu.Config_MenuMain_Base;
-import com.apps.mobile.android.commons.cfg.menu.IConfigurationMenu_Main;
-import com.apps.mobile.android.commons.engagement.achievements.Activity_Scores;
-import com.apps.mobile.android.commons.events.api.IEvent_Base;
-import com.apps.mobile.android.commons.events.api.IEventsManager;
-import com.apps.mobile.android.commons.menu.Activity_Menu_Main_Base;
+import org.metatransapps.commons.achievements.IAchievementsManager;
+import org.metatransapps.commons.app.Application_Base;
+import org.metatransapps.commons.cfg.menu.Config_MenuMain_Base;
+import org.metatransapps.commons.cfg.menu.IConfigurationMenu_Main;
+import org.metatransapps.commons.engagement.achievements.Activity_Scores;
+import org.metatransapps.commons.events.api.IEvent_Base;
+import org.metatransapps.commons.events.api.IEventsManager;
+import org.metatransapps.commons.menu.Activity_Menu_Main_Base;
+
 import com.easycolours.lib.R;
 import com.easycolours.cfg.mode.ConfigurationUtils_Mode;
 
