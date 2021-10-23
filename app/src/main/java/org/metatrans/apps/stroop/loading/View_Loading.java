@@ -46,7 +46,7 @@ public class View_Loading extends View_Loading_Base {
 	
 	
 	@Override
-	protected void initPiecesBitmaps() {
+	public void initPiecesBitmaps() {
 		
 		bitmap_commons = new Bitmap[] {
 				getImageBitmap(R.drawable.ic_arc_short_i),

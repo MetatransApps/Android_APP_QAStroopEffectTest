@@ -17,7 +17,7 @@ public class QuestionGenerator_Colours_Impl implements IQuestionGenerator {
 	private Context context;
 	
 	
-	private int[] colours_images = new int[] {
+	private static final int[] colours_images = new int[] {
 			R.drawable.ic_arc_comp_red,
 			R.drawable.ic_arc_comp_orange,
 			R.drawable.ic_arc_comp_yellow,
@@ -27,7 +27,7 @@ public class QuestionGenerator_Colours_Impl implements IQuestionGenerator {
 			R.drawable.ic_arc_comp_violet,
 		};
 	
-	private int[] colours_codes = new int[] {
+	private static final int[] colours_codes = new int[] {
 			Color.rgb(255, 0, 0),
 			Color.rgb(255, 127, 0),
 			Color.rgb(255, 255, 0),
@@ -37,7 +37,7 @@ public class QuestionGenerator_Colours_Impl implements IQuestionGenerator {
 			Color.rgb(211, 0, 201),
 		};
 	
-	private int[] colours_names = new int[] {
+	private static final int[] colours_names = new int[] {
 			R.string.ec_colour_red,
 			R.string.ec_colour_orange,
 			R.string.ec_colour_yellow,

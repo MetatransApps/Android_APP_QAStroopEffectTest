@@ -10,6 +10,8 @@ import org.metatrans.commons.Alerts_Base;
 import org.metatrans.commons.R;
 import org.metatrans.commons.app.Application_Base;
 import org.metatrans.commons.cfg.IConfigurationEntry;
+import org.metatrans.commons.cfg.colours.ConfigurationUtils_Colours;
+import org.metatrans.commons.cfg.colours.IConfigurationColours;
 import org.metatrans.commons.events.api.IEvent_Base;
 import org.metatrans.commons.events.api.IEventsManager;
 import org.metatrans.commons.ui.list.ListViewFactory;
@@ -38,8 +40,15 @@ public class Activity_Menu_Mode extends Activity_Base_EasyColours {
 		int currOrderNumber = ConfigurationUtils_Mode.getInstance().getOrderNumber(getUserSettings().modeID);
 		
 		LayoutInflater inflater = LayoutInflater.from(this);
-		ViewGroup frame = ListViewFactory.create_CITD_ByXML(this, inflater, buildRows(currOrderNumber), currOrderNumber, new OnItemClickListener_Menu());
-		
+
+		IConfigurationColours coloursCfg = ConfigurationUtils_Colours.getConfigByID(((Application_Base) getApplication()).getUserSettings().uiColoursID);
+
+		int color_background = coloursCfg.getColour_Background();
+
+		ViewGroup frame = ListViewFactory.create_CITD_ByXML(this, inflater, buildRows(currOrderNumber), currOrderNumber, color_background, new OnItemClickListener_Menu());
+
+		frame.setBackgroundColor(color_background);
+
 		setContentView(frame);
 		
 		setBackgroundPoster(R.id.commons_listview_frame, 55);
@@ -116,5 +125,11 @@ public class Activity_Menu_Mode extends Activity_Base_EasyColours {
 			eventsManager.register(Activity_Menu_Mode.this, eventsManager.create(IEvent_Base.MENU_OPERATION, IEvent_Base.MENU_OPERATION_CHANGE_MODE, computerModeID,
 					"MENU_OPERATION", "CHANGE_MODE", "" + computerModeID));
 		}
+	}
+
+
+	@Override
+	protected int getBackgroundImageID() {
+		return 0;
 	}
 }

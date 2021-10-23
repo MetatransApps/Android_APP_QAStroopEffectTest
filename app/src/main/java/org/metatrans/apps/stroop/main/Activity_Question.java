@@ -22,38 +22,12 @@ import android.view.View;
 public class Activity_Question extends org.metatrans.commons.questionnaire.main.Activity_Question {
 	
 	
-	/*@Override
-	protected void showLeaderBoards() {
-	
-		if (((Application_Base_Ads)getApplication()).getSocialProvider().isConnected()) {
-			
-			if (getGameData().getGameResult().count_incorrect == 0) {
-				long time = getGameData().getGameResult().time;
-				((Application_Base_Ads)getApplication()).getSocialProvider().submitLeaderboardScore(getUserSettings().modeID, time);
-			}
-			
-			GameResult best = getBestResults().getResult(getUserSettings().modeID);
-			if (best != null) {
-				if (best.count_incorrect == 0) {
-					((Application_Base_Ads)getApplication()).getSocialProvider().submitLeaderboardScore(getUserSettings().modeID, best.time);
-				}
-			}
-			
-			((Application_Base_Ads)getApplication()).getSocialProvider().openLeaderboard(getUserSettings().modeID);
-		}
-	}*/
-	
-	
 	@Override
 	protected String getBannerName() {
 		return IAdsConfiguration.AD_ID_BANNER2;
 	}
 
-	@Override
-	protected int getGravity() {
-		return Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
-	}
-	
+
 	@Override
 	public void setNextLevel() {
 		//Do nothing
@@ -69,10 +43,15 @@ public class Activity_Question extends org.metatrans.commons.questionnaire.main.
 	
 	@Override
 	protected View createView() {
+
 		IConfigurationColours coloursCfg = ConfigurationUtils_Colours.getConfigByID(getUserSettings().uiColoursID);
+
 		View_Question view = new View_Question(this, coloursCfg, getGameData());
+
 		view.setId(VIEW_ID);
+
 		view.setOnTouchListener(new OnTouchListener_Question(view));
+
 		return view;
 	}
 	
@@ -88,12 +67,12 @@ public class Activity_Question extends org.metatrans.commons.questionnaire.main.
 	protected Class<? extends Activity_Base> getActivityClass_Menu() {
 		return Activity_Menu_Main.class;
 	}
-	
-	
-	@Override
+
+
+	/*@Override
 	protected Class<? extends Activity_Base> getActivityClass_Result() {
 		return Activity_Result.class;
-	}
+	}*/
 	
 	
 	@Override
