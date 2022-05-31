@@ -1,3 +1,13 @@
+1.2.3 (31.10.2021) 
+Compliance with Google Play ads policy - ads are labeled with ads text
+Add sound switch option as it was requested by you - our users
+Fix background color of the sound menu
+
+1.0.7 [PAID] (31.10.2021) 
+Compliance with Google Play ads policy - ads are labeled with ads text
+Add sound switch option as it was requested by you - our users
+Fix background color of the sound menu
+
 1.2.1 (25.10.2021) 
 Long awaited big investment in User Interface and User Experience. We hope you enjoy the new design!
 
