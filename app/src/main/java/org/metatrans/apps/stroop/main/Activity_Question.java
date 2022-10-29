@@ -15,22 +15,21 @@ import org.metatrans.commons.questionnaire.main.View_Question;
 import org.metatrans.commons.storage.StorageUtils;
 
 import android.content.res.Configuration;
-import android.view.Gravity;
 import android.view.View;
 
 
 public class Activity_Question extends org.metatrans.commons.questionnaire.main.Activity_Question {
-	
-	
-	@Override
-	protected String getBannerName() {
-		return IAdsConfiguration.AD_ID_BANNER2;
-	}
 
 
 	@Override
 	public void setNextLevel() {
 		//Do nothing
+	}
+
+
+	@Override
+	protected String getBannerName() {
+		return IAdsConfiguration.AD_ID_BANNER2;
 	}
 	
 	
@@ -58,6 +57,12 @@ public class Activity_Question extends org.metatrans.commons.questionnaire.main.
 	
 	@Override
 	protected IConfigurationQuestion getNextQuestion() {
+
+		if (getGameData().count_answered >= getUserSettings().countQuestions) {
+
+			return null;
+		}
+
 		IConfigurationQuestion next_question = GeneratorsFactory.getGenerator_ByType(this.getApplication(), getUserSettings().modeID).nextQuestion(getGameData());
 		return next_question;
 	}
