@@ -6,7 +6,9 @@ import org.metatrans.commons.questionnaire.api.IConfigurationQuestion_TextQuesti
 import org.metatrans.commons.questionnaire.logic.questions.CfgQuestion_Base_ImageButtons;
 
 
-public class CfgQuestion_Colours extends CfgQuestion_Base_ImageButtons implements IConfigurationQuestion_ImageButtons, IConfigurationQuestion_TextQuestion  {
+public class CfgQuestion_Colours extends CfgQuestion_Base_ImageButtons
+
+		implements IConfigurationQuestion_ImageButtons, IConfigurationQuestion_TextQuestion  {
 	
 	
 	private static final long serialVersionUID = -8763624737022681624L;

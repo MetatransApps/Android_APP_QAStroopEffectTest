@@ -2,13 +2,18 @@ package org.metatrans.apps.stroop.logic;
 
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.Matrix;
 
 import org.metatrans.apps.stroop.lib.R;
+import org.metatrans.commons.app.Application_Base;
 import org.metatrans.commons.questionnaire.api.IConfigurationQuestion;
+import org.metatrans.commons.questionnaire.api.IConfigurationQuestion_TextQuestion;
 import org.metatrans.commons.questionnaire.api.IQuestionGenerator;
 import org.metatrans.commons.questionnaire.model.GameData;
 import org.metatrans.commons.questionnaire.utils.NumbersUtils;
+import org.metatrans.commons.ui.utils.BitmapUtils;
 
 
 public class QuestionGenerator_Colours_Impl implements IQuestionGenerator {
@@ -26,7 +31,8 @@ public class QuestionGenerator_Colours_Impl implements IQuestionGenerator {
 			//R.drawable.ic_arc_comp_indigo,
 			R.drawable.ic_arc_comp_violet,
 		};
-	
+
+
 	private static final int[] colours_codes = new int[] {
 			Color.rgb(255, 0, 0),
 			Color.rgb(255, 127, 0),
@@ -61,17 +67,35 @@ public class QuestionGenerator_Colours_Impl implements IQuestionGenerator {
 		
 		
 		NumbersUtils.shuffleArray(indexes);
-		
-		
-		IConfigurationQuestion question = new CfgQuestion_Colours(0,
-				new Integer[] {colours_images[indexes[0]], colours_images[indexes[1]], colours_images[indexes[2]], colours_images[indexes[3]]},
-				context.getString(colours_names[indexes[0]]),
-				colours_codes[indexes[1]]);
-		
+
+		String bitmap_text_str = context.getString(colours_names[indexes[0]]) + "";
+
+		int color_background = colours_codes[indexes[1]];
+
+		//System.out.println("bitmap_text_str=" + bitmap_text_str);
+
+
+		IConfigurationQuestion question = new CfgQuestion_Colours_Image(
+
+			0,
+
+						new Integer[] {
+
+								colours_codes[indexes[0]],
+								colours_codes[indexes[1]],
+								colours_codes[indexes[2]],
+								colours_codes[indexes[3]]
+						},
+
+						bitmap_text_str,
+
+						color_background
+		);
 
 		
 		question.shuffle();
-		
+
+
 		return question;
 	}
 }
