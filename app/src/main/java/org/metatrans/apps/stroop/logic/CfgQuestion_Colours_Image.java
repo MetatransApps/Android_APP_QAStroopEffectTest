@@ -27,9 +27,9 @@ public class CfgQuestion_Colours_Image extends CfgQuestion_Base_TextButtons
 	private transient Bitmap bitmap;
 
 
-	public CfgQuestion_Colours_Image(int _index_correct, Object[] _array, String _bitmap_text_str, int _color_background) {
+	public CfgQuestion_Colours_Image(int _index_correct, Integer[] _array, String _bitmap_text_str, int _color_background) {
 
-		super(_index_correct, _array);
+		super(_index_correct, _array, _bitmap_text_str, _color_background, -1);
 
 		bitmap_text_str = _bitmap_text_str;
 
@@ -38,10 +38,31 @@ public class CfgQuestion_Colours_Image extends CfgQuestion_Base_TextButtons
 
 
 	@Override
-	public int getAnswersCount() {
+	public int getColor_Area() {
 
-		return getAnswers().length;
+		return color_background;
 	}
+
+
+	@Override
+	public int getResID_Question() {
+
+		return -1;
+	}
+
+
+	/*@Override
+	public Object[] getAnswers() {
+
+		String[] buttons_text = new String[4];
+
+		for (int i=0; i<buttons_text.length; i++) {
+
+			buttons_text[i] = " ";
+		}
+
+		return buttons_text;
+	}*/
 
 
 	@Override
@@ -76,33 +97,6 @@ public class CfgQuestion_Colours_Image extends CfgQuestion_Base_TextButtons
 
 		return bitmap;
 	}
-
-
-	@Override
-	public int getColor_AreaAndText() {
-
-		return color_background;
-	}
-
-
-	@Override
-	public int getResID_Question() {
-
-		throw new UnsupportedOperationException("Bitmap getQuestion() must be used.");
-	}
-
-
-	/*@Override
-	public String getQuestion() {
-		return question;
-	}
-
-
-	@Override
-	public int getQuestionColour() {
-		return colourText;
-	}
-	*/
 
 
 	@Override

@@ -68,12 +68,12 @@ public class QuestionGenerator_Words_Impl implements IQuestionGenerator {
 
 				1,
 
-				new String[] {
+				new Integer[] {
 
-						fill(context.getString(colours_names[indexes[0]])),
-						fill(context.getString(colours_names[indexes[1]])),
-						fill(context.getString(colours_names[indexes[2]])),
-						fill(context.getString(colours_names[indexes[3]]))
+						colours_names[indexes[0]],
+						colours_names[indexes[1]],
+						colours_names[indexes[2]],
+						colours_names[indexes[3]]
 				},
 
 				bitmap_text_str,
@@ -85,17 +85,6 @@ public class QuestionGenerator_Words_Impl implements IQuestionGenerator {
 		question.shuffle();
 		
 		return question;
-	}
-
-
-	private String fill(String string) {
-		if (string.length() == 3) {
-			return "   " + string + "   ";
-		} else if (string.length() == 4) {
-			return "  " + string + "  ";
-		} else {
-			return " " + string + " ";
-		}
 	}
 }
 

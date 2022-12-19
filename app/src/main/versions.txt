@@ -1,3 +1,11 @@
+1.2.7 (18.12.2022)
+Better compliance with the app store policies.
+New graphical design of the game assets - new cards.
+
+1.0.9 [PAID] (18.12.2022)
+Better compliance with the app store policies.
+New graphical design of the game assets - new cards.
+
 1.2.3 (31.10.2021) 
 Compliance with Google Play ads policy - ads are labeled with ads text
 Add sound switch option as it was requested by you - our users
