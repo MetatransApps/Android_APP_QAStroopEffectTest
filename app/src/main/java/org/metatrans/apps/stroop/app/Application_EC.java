@@ -2,7 +2,6 @@ package org.metatrans.apps.stroop.app;
 
 
 import org.metatrans.apps.stroop.achievements.AchievementsManager;
-import org.metatrans.apps.stroop.cfg.app.AppConfig_EC;
 import org.metatrans.apps.stroop.cfg.mode.ConfigurationUtils_Mode;
 import org.metatrans.apps.stroop.events.EventsManager_EC;
 import org.metatrans.apps.stroop.lib.BuildConfig;
@@ -10,7 +9,6 @@ import org.metatrans.apps.stroop.main.Activity_Result;
 import org.metatrans.apps.stroop.model.UserSettings;
 import org.metatrans.commons.achievements.IAchievementsManager;
 import org.metatrans.commons.app.Application_Base_Ads;
-import org.metatrans.commons.cfg.app.IAppConfig;
 import org.metatrans.commons.cfg.appstore.IAppStore;
 import org.metatrans.commons.cfg.colours.ConfigurationUtils_Colours;
 import org.metatrans.commons.cfg.menu.ConfigurationUtils_Base_MenuMain;
@@ -24,10 +22,8 @@ import org.metatrans.commons.ui.utils.DebugUtils;
 
 
 public abstract class Application_EC extends Application_Base_Ads {
-	
-	
-	protected IAppConfig appConfig = new AppConfig_EC();
-	
+
+
 	private static final String[] KEYWORDS = new String[] {"colors", "colours"};
 	
 	
@@ -44,13 +40,7 @@ public abstract class Application_EC extends Application_Base_Ads {
 		
 		ConfigurationUtils_Base_MenuMain.createInstance();
 	}
-	
-	
-	@Override
-	public IAppConfig getAppConfig() {
-		return appConfig;
-	}
-	
+
 	
 	@Override
 	protected ILeaderboardsProvider createLeaderboardsProvider() {
