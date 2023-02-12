@@ -8,7 +8,6 @@ import org.metatrans.apps.stroop.cfg.achievements.Config_Achievement_Correct_Get
 import org.metatrans.apps.stroop.cfg.mode.ConfigurationUtils_Mode;
 import org.metatrans.apps.stroop.model.UserSettings;
 import org.metatrans.commons.achievements.IAchievementsManager;
-import org.metatrans.commons.analytics.IAnalytics;
 import org.metatrans.commons.app.Application_Base;
 import org.metatrans.commons.cfg.achievements.IConfigurationAchievements;
 import org.metatrans.commons.events.EventsManager_Base;
@@ -31,9 +30,9 @@ public class EventsManager_EC extends EventsManager_Base {
 	private IAchievementsManager achievementsManager;
 	
 	
-	public EventsManager_EC(ExecutorService _executor, IAnalytics _analytics, IAchievementsManager _achievementsManager) {
+	public EventsManager_EC(ExecutorService _executor, IAchievementsManager _achievementsManager) {
 		
-		super(_executor, _analytics);
+		super(_executor);
 		
 		achievementsManager = _achievementsManager;
 	}
@@ -61,11 +60,11 @@ public class EventsManager_EC extends EventsManager_Base {
 			
 			if (settings.modeID == ConfigurationUtils_Mode.MODE_GETMEANING) {
 			
-				register(activity, create(IEvent_Base.WIN_GAME, WIN_GAME_GETMEANING, "WIN_GAME", "GETMEANING"));
+				register(activity, IEvent_EC.EVENT_GAME_WIN_GET_MEANING);
 				
 			} else {
 				
-				register(activity, create(IEvent_Base.WIN_GAME, WIN_GAME_GETCOLOR, "WIN_GAME", "GETCOLOR"));
+				register(activity, IEvent_EC.EVENT_GAME_WIN_GET_COLOR);
 				
 			}
 		}
@@ -88,7 +87,7 @@ public class EventsManager_EC extends EventsManager_Base {
 			if (event.getSubID() == IEvent_Base.MENU_OPERATION_CHANGE_COLOURS) {
 				achievementsManager.inc(context, IConfigurationAchievements.CFG_ACHIEVEMENT_CHANGE_COLOURS);
 				
-			} else if (event.getSubID() == IEvent_Base.MENU_OPERATION_CHANGE_MODE) {
+			} else if (event.getSubID() == IEvent_Base.MENU_OPERATION_CHANGE_LEVEL) {
 				achievementsManager.inc(context, IConfigurationAchievements.CFG_ACHIEVEMENT_CHANGE_MODE);
 			} 
 			

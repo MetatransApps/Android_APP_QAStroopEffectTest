@@ -67,13 +67,15 @@ public abstract class Application_EC extends Application_Base_Ads {
 	
 	@Override
 	protected IAchievementsManager createAchievementsManager() {
+
 		return new AchievementsManager(this);
 	}
 	
 	
 	@Override
 	protected IEventsManager createEventsManager() {
-		return new EventsManager_EC(getExecutor(), getAnalytics(), getAchievementsManager());
+
+		return new EventsManager_EC(getExecutor(), getAchievementsManager());
 	}
 	
 	

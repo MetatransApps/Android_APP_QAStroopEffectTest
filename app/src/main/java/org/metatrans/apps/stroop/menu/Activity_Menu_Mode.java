@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.metatrans.apps.stroop.Activity_Base_EasyColours;
 import org.metatrans.apps.stroop.cfg.mode.ConfigurationUtils_Mode;
+import org.metatrans.apps.stroop.events.IEvent_EC;
 import org.metatrans.commons.Alerts_Base;
 import org.metatrans.commons.R;
 import org.metatrans.commons.app.Application_Base;
@@ -120,10 +121,13 @@ public class Activity_Menu_Mode extends Activity_Base_EasyColours {
 			getUserSettings().modeID = computerModeID;
 			
 			Application_Base.getInstance().recreateGameDataObject();
-			
+
+			IConfigurationEntry cfg_mode = ConfigurationUtils_Mode.getInstance().getConfigByID(computerModeID);
+
 			IEventsManager eventsManager = Application_Base.getInstance().getEventsManager();
-			eventsManager.register(Activity_Menu_Mode.this, eventsManager.create(IEvent_Base.MENU_OPERATION, IEvent_Base.MENU_OPERATION_CHANGE_MODE, computerModeID,
-					"MENU_OPERATION", "CHANGE_MODE", "" + computerModeID));
+			eventsManager.register(Activity_Menu_Mode.this,
+					IEvent_EC.EVENT_MENU_OPERATION_CHANGE_MODE.createByVarianceInCategory3(computerModeID, getString(cfg_mode.getName()))
+			);
 		}
 	}
 
