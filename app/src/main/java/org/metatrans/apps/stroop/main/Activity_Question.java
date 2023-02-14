@@ -59,11 +59,6 @@ public class Activity_Question extends org.metatrans.commons.questionnaire.main.
 	@Override
 	protected IConfigurationQuestion getNextQuestion(GameData gameData) {
 
-		if (gameData.count_answered >= getUserSettings().countQuestions) {
-
-			return null;
-		}
-
 		IConfigurationQuestion next_question = GeneratorsFactory.getGenerator_ByType(this.getApplication(), getUserSettings().modeID).nextQuestion(gameData);
 
 		return next_question;
