@@ -12,6 +12,7 @@ import org.metatrans.commons.cfg.colours.IConfigurationColours;
 import org.metatrans.commons.questionnaire.api.IConfigurationQuestion;
 import org.metatrans.commons.questionnaire.main.OnTouchListener_Question;
 import org.metatrans.commons.questionnaire.main.View_Question;
+import org.metatrans.commons.questionnaire.model.GameData;
 import org.metatrans.commons.storage.StorageUtils;
 
 import android.content.res.Configuration;
@@ -56,14 +57,15 @@ public class Activity_Question extends org.metatrans.commons.questionnaire.main.
 	
 	
 	@Override
-	protected IConfigurationQuestion getNextQuestion() {
+	protected IConfigurationQuestion getNextQuestion(GameData gameData) {
 
-		if (getGameData().count_answered >= getUserSettings().countQuestions) {
+		if (gameData.count_answered >= getUserSettings().countQuestions) {
 
 			return null;
 		}
 
-		IConfigurationQuestion next_question = GeneratorsFactory.getGenerator_ByType(this.getApplication(), getUserSettings().modeID).nextQuestion(getGameData());
+		IConfigurationQuestion next_question = GeneratorsFactory.getGenerator_ByType(this.getApplication(), getUserSettings().modeID).nextQuestion(gameData);
+
 		return next_question;
 	}
 	
