@@ -39,8 +39,8 @@ public class Activity_Question extends org.metatrans.commons.questionnaire.main.
 		boolean left_handed = (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE);
 		return left_handed ? R.drawable.ic_colours_tube : R.drawable.ic_colours_tube;
 	}
-	
-	
+
+
 	@Override
 	protected View createView() {
 
@@ -50,7 +50,17 @@ public class Activity_Question extends org.metatrans.commons.questionnaire.main.
 
 		view.setId(VIEW_ID);
 
-		view.setOnTouchListener(new OnTouchListener_Question(view));
+		view.setOnTouchListener(new OnTouchListener_Question(view) {
+			@Override
+			public int getSFX_AnswerCorrect_ResID() {
+				return 0;
+			}
+
+			@Override
+			public int getSFX_AnswerWrong_ResID() {
+				return 0;
+			}
+		});
 
 		return view;
 	}
@@ -86,5 +96,17 @@ public class Activity_Question extends org.metatrans.commons.questionnaire.main.
 			settings = (UserSettings) StorageUtils.readStorage(this, UserSettings.FILE_NAME_USER_SETTINGS);
 		}
 		return settings;
+	}
+
+
+	@Override
+	public int getSFX_GameStart_ResID() {
+		return 0;
+	}
+
+
+	@Override
+	public int getSFX_GameEnd_ResID() {
+		return 0;
 	}
 }
