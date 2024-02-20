@@ -7,6 +7,7 @@ import java.io.ObjectOutputStream;
 
 import org.metatrans.apps.stroop.cfg.mode.ConfigurationUtils_Mode;
 import org.metatrans.commons.cfg.colours.IConfigurationColours;
+import org.metatrans.commons.cfg.melody.IConfigurationMelody;
 
 
 public class UserSettings extends org.metatrans.commons.questionnaire.model.UserSettings {
@@ -25,7 +26,9 @@ public class UserSettings extends org.metatrans.commons.questionnaire.model.User
 		uiColoursID 		= IConfigurationColours.CFG_COLOUR_BLUE_PETROL;
 		modeID 				= ConfigurationUtils_Mode.MODE_GETMEANING;
 		countQuestions 		= DEFAULT_COUNT_QUESTIONS;
-		
+
+		melody_cfg_id 		= IConfigurationMelody.CFG_MELODY_RELAXATION;
+
 		//fixFields("constructor");
 	}
 	

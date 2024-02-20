@@ -15,6 +15,7 @@ import org.metatrans.commons.cfg.colours.ConfigurationUtils_Colours;
 import org.metatrans.commons.cfg.colours.IConfigurationColours;
 import org.metatrans.commons.events.api.IEvent_Base;
 import org.metatrans.commons.events.api.IEventsManager;
+import org.metatrans.commons.ui.Toast_Base;
 import org.metatrans.commons.ui.list.ListViewFactory;
 import org.metatrans.commons.ui.list.RowItem_CIdTD;
 import org.metatrans.commons.ui.utils.BitmapUtils;
@@ -91,9 +92,11 @@ public class Activity_Menu_Mode extends Activity_Base_EasyColours {
 		
 		@Override
 		public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
-			
-			
+
+			Application_Base.getInstance().getSFXManager().playSound(R.raw.sfx_button_pressed_2);
+
 			int currOrderNumber = ConfigurationUtils_Mode.getInstance().getOrderNumber(getUserSettings().modeID);
+
 			if (position != currOrderNumber) {
 				
 				AlertDialog.Builder adb = Alerts_Base.createAlertDialog_LoseGame(view.getContext(),

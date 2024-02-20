@@ -7,6 +7,7 @@ import org.metatrans.apps.stroop.menu.Activity_Menu_Main;
 import org.metatrans.apps.stroop.model.UserSettings;
 import org.metatrans.commons.Activity_Base;
 import org.metatrans.commons.ads.api.IAdsConfiguration;
+import org.metatrans.commons.app.Application_Base;
 import org.metatrans.commons.cfg.colours.ConfigurationUtils_Colours;
 import org.metatrans.commons.cfg.colours.IConfigurationColours;
 import org.metatrans.commons.questionnaire.api.IConfigurationQuestion;
@@ -53,12 +54,12 @@ public class Activity_Question extends org.metatrans.commons.questionnaire.main.
 		view.setOnTouchListener(new OnTouchListener_Question(view) {
 			@Override
 			public int getSFX_AnswerCorrect_ResID() {
-				return 0;
+				return R.raw.sfx_answer_correct;
 			}
 
 			@Override
 			public int getSFX_AnswerWrong_ResID() {
-				return 0;
+				return R.raw.sfx_answer_wrong;
 			}
 		});
 
@@ -100,13 +101,33 @@ public class Activity_Question extends org.metatrans.commons.questionnaire.main.
 
 
 	@Override
+	public void onResume() {
+
+		super.onResume();
+
+		Application_Base.getInstance().getMelodiesManager().setMelody(Application_Base.getInstance().getUserSettings().melody_cfg_id);
+	}
+
+
+	@Override
+	public void onPause() {
+
+		super.onPause();
+
+		Application_Base.getInstance().getMelodiesManager().stop();
+	}
+
+
+	@Override
 	public int getSFX_GameStart_ResID() {
-		return 0;
+
+		return R.raw.sfx_game_start;
 	}
 
 
 	@Override
 	public int getSFX_GameEnd_ResID() {
-		return 0;
+
+		return R.raw.sfx_game_end;
 	}
 }

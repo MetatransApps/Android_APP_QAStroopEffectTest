@@ -5,6 +5,7 @@ import org.metatrans.apps.stroop.achievements.AchievementsManager;
 import org.metatrans.apps.stroop.cfg.mode.ConfigurationUtils_Mode;
 import org.metatrans.apps.stroop.events.EventsManager_EC;
 import org.metatrans.apps.stroop.lib.BuildConfig;
+import org.metatrans.apps.stroop.lib.R;
 import org.metatrans.apps.stroop.main.Activity_Result;
 import org.metatrans.apps.stroop.model.UserSettings;
 import org.metatrans.commons.achievements.IAchievementsManager;
@@ -39,6 +40,18 @@ public abstract class Application_EC extends Application_Base_Ads {
 		ConfigurationUtils_Mode.createInstance();
 		
 		ConfigurationUtils_Base_MenuMain.createInstance();
+
+		getSFXManager().loadSounds(this,
+				new int[] {
+						org.metatrans.commons.R.raw.sfx_button_pressed_1,
+						org.metatrans.commons.R.raw.sfx_button_pressed_2,
+						org.metatrans.commons.R.raw.sfx_button_pressed_3,
+						R.raw.sfx_answer_correct,
+						R.raw.sfx_answer_wrong,
+						R.raw.sfx_game_start,
+						R.raw.sfx_game_end,
+				}
+		);
 	}
 
 	
