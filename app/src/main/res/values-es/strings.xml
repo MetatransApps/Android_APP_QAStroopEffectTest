@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-     
-    <string name="mode_colours_name">Obtener Significado, ponga Color</string>
-    <string name="mode_colours_desc">Comprender el significado y haga clic en el botón con el color correcto</string>
-    <string name="mode_words_name">Obtener el Color, ponga Significado</string>
-    <string name="mode_words_desc">Reconocer el color y haga clic en el botón con el significado correcto</string>
-    
+
+    <string name="mode_colours_name">Obtener Significado, Elegir Color</string>
+    <string name="mode_colours_desc">Comprende el significado y haz clic en el botón con el color correcto</string>
+    <string name="mode_words_name">Obtener Color, Elegir Significado</string>
+    <string name="mode_words_desc">Reconoce el color y haz clic en el botón con el significado correcto</string>
+
     <string name="ec_colour_red">Rojo</string>
     <string name="ec_colour_orange">Naranja</string>
     <string name="ec_colour_yellow">Amarillo</string>
@@ -13,5 +13,5 @@
     <string name="ec_colour_blue">Azul</string>
     <string name="ec_colour_indigo">Púrpura</string>
     <string name="ec_colour_violet">Rosa</string>
-    
+
 </resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mode_colours_name">Anlamı Al, Rengi Seç</string>
+    <string name="mode_colours_desc">Anlamı anlayın ve doğru renkteki düğmeye tıklayın</string>
+    <string name="mode_words_name">Rengi Al, Anlamı Seç</string>
+    <string name="mode_words_desc">Rengi tanıyın ve doğru anlamdaki düğmeye tıklayın</string>
+
+    <string name="ec_colour_red">Kırmızı</string>
+    <string name="ec_colour_orange">Turuncu</string>
+    <string name="ec_colour_yellow">Sarı</string>
+    <string name="ec_colour_green">Yeşil</string>
+    <string name="ec_colour_blue">Mavi</string>
+    <string name="ec_colour_indigo">Mor</string>
+    <string name="ec_colour_violet">Pembe</string>
+
+</resources>

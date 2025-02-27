@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    
-    
-    <string name="achievement_title_correct_getcolor">Todo correcta en Get color, Significado Ponga</string>
-    <string name="achievement_title_correct_getmeaning">Todo correcta en Get Significado, Ponga color</string>
-    
-    
-    <string name="achievement_desc_correct_getcolor">Ha respondido correcta en todas las preguntas de Get color, Ponga el modo Significado</string>
-    <string name="achievement_desc_correct_getmeaning">Ha respondido correcta en todas las preguntas de Get Significado Ponga el modo de color</string>
+
+
+    <string name="achievement_title_correct_getcolor">Todo correcto en Obtener Color, Elegir Significado</string>
+    <string name="achievement_title_correct_getmeaning">Todo correcto en Obtener Significado, Elegir Color</string>
+
+    <string name="achievement_desc_correct_getcolor">Has respondido correctamente a todas las preguntas en el modo Obtener Color, Elegir Significado</string>
+    <string name="achievement_desc_correct_getmeaning">Has respondido correctamente a todas las preguntas en el modo Obtener Significado, Elegir Color</string>
    	
 </resources>

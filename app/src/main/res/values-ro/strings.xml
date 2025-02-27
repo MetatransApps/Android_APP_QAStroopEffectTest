@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mode_colours_name">Obține Semnificație, Alege Culoare</string>
+    <string name="mode_colours_desc">Înțelege semnificația și apasă butonul cu culoarea corectă</string>
+    <string name="mode_words_name">Obține Culoare, Alege Semnificație</string>
+    <string name="mode_words_desc">Recunoaște culoarea și apasă butonul cu semnificația corectă</string>
+
+    <string name="ec_colour_red">Roșu</string>
+    <string name="ec_colour_orange">Portocaliu</string>
+    <string name="ec_colour_yellow">Galben</string>
+    <string name="ec_colour_green">Verde</string>
+    <string name="ec_colour_blue">Albastru</string>
+    <string name="ec_colour_indigo">Violet</string>
+    <string name="ec_colour_violet">Roz</string>
+
+</resources>

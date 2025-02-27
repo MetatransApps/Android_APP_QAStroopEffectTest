@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mode_colours_name">Obter Significado, Escolher Cor</string>
+    <string name="mode_colours_desc">Entenda o significado e clique no botão com a cor correta</string>
+    <string name="mode_words_name">Obter Cor, Escolher Significado</string>
+    <string name="mode_words_desc">Reconheça a cor e clique no botão com o significado correto</string>
+
+    <string name="ec_colour_red">Vermelho</string>
+    <string name="ec_colour_orange">Laranja</string>
+    <string name="ec_colour_yellow">Amarelo</string>
+    <string name="ec_colour_green">Verde</string>
+    <string name="ec_colour_blue">Azul</string>
+    <string name="ec_colour_indigo">Roxo</string>
+    <string name="ec_colour_violet">Rosa</string>
+
+</resources>

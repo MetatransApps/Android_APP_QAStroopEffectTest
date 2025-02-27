@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="achievement_title_correct_getcolor">Tudo Certo em Obter Cor, Escolher Significado</string>
+    <string name="achievement_title_correct_getmeaning">Tudo Certo em Obter Significado, Escolher Cor</string>
+
+    <string name="achievement_desc_correct_getcolor">Você respondeu corretamente a todas as perguntas no modo Obter Cor, Escolher Significado</string>
+    <string name="achievement_desc_correct_getmeaning">Você respondeu corretamente a todas as perguntas no modo Obter Significado, Escolher Cor</string>
+    
+	<string name="achievement_id_invite_3_friends">CgkIiebopN8YEAIQAw</string>
+    <string name="achievement_id_stop_pieces">CgkIiebopN8YEAIQBA</string>
+    <string name="achievement_id_change_colours">CgkIiebopN8YEAIQBQ</string>
+    <string name="achievement_id_change_mode">CgkIiebopN8YEAIQBg</string>
+    <string name="achievement_id_correct_getcolor">CgkIiebopN8YEAIQBw</string>
+ 	<string name="achievement_id_correct_getmeaning">CgkIiebopN8YEAIQCA</string>
+    
+ 	
+	<integer name="achievement_score_invite_3_friends">15</integer>
+	<integer name="achievement_score_stop_pieces">25</integer>
+    <integer name="achievement_score_change_colours">15</integer>
+    <integer name="achievement_score_change_mode">15</integer>
+    <integer name="achievement_score_correct_getcolor">10</integer>
+    <integer name="achievement_score_correct_getmeaning">10</integer>
+	
+    
+	<integer name="achievement_increments_invite_3_friends">1</integer>
+	<integer name="achievement_increments_stop_pieces">1</integer>
+    <integer name="achievement_increments_change_colours">11</integer>
+    <integer name="achievement_increments_change_mode">3</integer>
+    <integer name="achievement_increments_correct_getcolor">1</integer>
+    <integer name="achievement_increments_correct_getmeaning">1</integer>
+    
+	
+	<integer name="achievement_maxcount_invite_3_friends">3</integer>
+	<integer name="achievement_maxcount_stop_pieces">1</integer>
+    <integer name="achievement_maxcount_change_colours">1</integer>
+    <integer name="achievement_maxcount_change_mode">1</integer>
+	<integer name="achievement_maxcount_correct_getcolor">20</integer>
+    <integer name="achievement_maxcount_correct_getmeaning">20</integer>
+    
+    
+</resources>

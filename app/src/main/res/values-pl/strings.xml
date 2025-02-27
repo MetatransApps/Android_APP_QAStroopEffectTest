@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="mode_colours_name">Otrzymaj Znaczenie, Wybierz Kolor</string>
+    <string name="mode_colours_desc">Zrozum znaczenie i kliknij przycisk z właściwym kolorem</string>
+    <string name="mode_words_name">Otrzymaj Kolor, Wybierz Znaczenie</string>
+    <string name="mode_words_desc">Rozpoznaj kolor i kliknij przycisk z właściwym znaczeniem</string>
+
+    <string name="ec_colour_red">Czerwony</string>
+    <string name="ec_colour_orange">Pomarańczowy</string>
+    <string name="ec_colour_yellow">Żółty</string>
+    <string name="ec_colour_green">Zielony</string>
+    <string name="ec_colour_blue">Niebieski</string>
+    <string name="ec_colour_indigo">Fioletowy</string>
+    <string name="ec_colour_violet">Różowy</string>
+
+</resources>
